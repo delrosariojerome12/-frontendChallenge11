@@ -1,0 +1,425 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* font */
+  --font-1: "Bai Jamjuree", sans-serif;
+  /* primary color */
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  /* neutral */
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  --white: #fff;
+  /* border */
+  /* --border: solid 0.1rem #000; */
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.8rem;
+  font-family: var(--font-1);
+  /* padding: 6.5rem 2rem; */
+}
+.wrapper {
+  width: 90%;
+  border: var(--border);
+  display: grid;
+  gap: 11rem;
+  margin: auto;
+  margin-top: 7rem;
+  margin-bottom: 10rem;
+}
+.wrapper > section {
+  border: var(--border);
+  width: 100%;
+}
+/* landing page */
+.landing-page {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+}
+.landing-page > div {
+  border: var(--border);
+}
+.landing-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.landing-text {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.landing-text h1 {
+  margin-bottom: 1.5rem;
+  border: var(--border);
+  width: 85%;
+  color: var(--Dark-Grayish-Blue);
+}
+.landing-text p {
+  border: var(--border);
+  font-size: 1.7rem;
+  color: var(--Grayish-Blue);
+  /* width: 95%; */
+}
+.landing-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.landing-btn a {
+  text-decoration: none;
+  color: var(--white);
+  display: block;
+  padding: 1.2rem 0;
+  border-radius: 3.5rem;
+  text-align: center;
+  box-shadow: 0rem 0.1rem 0.1rem #000;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 90%;
+}
+.landing-btn a:first-child {
+  background-color: var(--Strong-Cyan);
+  margin-bottom: 2rem;
+}
+.landing-btn a:last-child {
+  background-color: var(--Light-Blue);
+}
+/* laptop */
+.monitor {
+  height: 130vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 3rem;
+}
+.monitor > div {
+  border: var(--border);
+}
+.text-box {
+  text-align: center;
+}
+.text-box h2 {
+  color: var(--Dark-Grayish-Blue);
+  margin-bottom: 2rem;
+}
+.text-box p {
+  color: var(--Grayish-Blue);
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  word-spacing: 0.2rem;
+}
+.img-monitor {
+  background: url(clipboard-landing-page-master/images/image-computer.png)
+    no-repeat center;
+  background-size: contain;
+  height: 25.4rem;
+  margin-bottom: 2rem;
+}
+/* tablet */
+.tablet {
+  height: 55vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5rem;
+}
+.tablet > div {
+  border: var(--border);
+}
+.img-tablet {
+  background: url(clipboard-landing-page-master/images/image-devices.png)
+    no-repeat center;
+  background-size: contain;
+  height: 20rem;
+}
+/* workflow */
+.workflow {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 3rem;
+}
+.workflow > div {
+  border: var(--border);
+}
+.header-3 {
+  margin-bottom: 3rem;
+}
+.workflow svg {
+  margin-bottom: 2rem;
+}
+/* company */
+.company {
+  border: var(--border);
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 2rem;
+}
+.company > div {
+  border: var(--border);
+  width: 40%;
+  height: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.google {
+  background: url(clipboard-landing-page-master/images/logo-google.png)
+    no-repeat center;
+  background-size: contain;
+}
+.ibm {
+  background: url(clipboard-landing-page-master/images/logo-ibm.png) no-repeat
+    center;
+  background-size: contain;
+}
+.microsoft {
+  background: url(clipboard-landing-page-master/images/logo-microsoft.png)
+    no-repeat center;
+  background-size: contain;
+}
+.hp {
+  background: url(clipboard-landing-page-master/images/logo-hp.png) no-repeat
+    center;
+  background-size: contain;
+}
+.vector {
+  background: url(clipboard-landing-page-master/images/logo-vector-graphics.png)
+    no-repeat center;
+  background-size: contain;
+}
+.ios {
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3rem;
+}
+.ios > div {
+  border: var(--border);
+}
+.dl-btn a {
+  text-decoration: none;
+  color: var(--white);
+  display: block;
+  padding: 1.2rem 0;
+  border-radius: 3.5rem;
+  text-align: center;
+  box-shadow: 0rem 0.1rem 0.1rem #000;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 90%;
+  margin: auto;
+}
+.dl-btn a:first-child {
+  background: var(--Strong-Cyan);
+  margin-bottom: 3rem;
+}
+.dl-btn a:last-child {
+  background: var(--Light-Blue);
+}
+footer {
+  height: 60vh;
+  border: var(--border);
+  background: #eee;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer > div {
+  border: var(--border);
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  height: 12%;
+  background: url(clipboard-landing-page-master/images/logo.svg) no-repeat
+    center;
+  background-size: contain;
+}
+.text-footer {
+  height: 50%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.text-footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 700;
+}
+.icon-footer {
+  height: 15%;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 600px) {
+  .landing-btn a,
+  .dl-btn a {
+    max-width: 30rem;
+  }
+  .wrapper {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .landing-text p {
+    width: 67%;
+  }
+  .landing-icon {
+    justify-content: flex-end;
+  }
+  .landing-page {
+    gap: 0;
+  }
+  .monitor {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 80vh;
+  }
+  .header-1 {
+    grid-column: 1/3;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+  .text-1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: left;
+    width: 45%;
+  }
+  .text-2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: left;
+    width: 45%;
+  }
+  .text-3 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: left;
+    width: 45%;
+  }
+  .img-monitor {
+    grid-column: 1/2;
+    grid-row: 2/5;
+    height: 100%;
+  }
+  .tablet {
+    gap: 2rem;
+    height: 65vh;
+  }
+  .header-2 {
+    width: 75%;
+    margin: auto;
+    height: 50%;
+    margin-bottom: 0;
+  }
+  .img-tablet {
+    height: 30rem;
+  }
+  .workflow {
+    height: 50vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .header-3 {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    margin-bottom: 0;
+    height: 70%;
+  }
+  .icon-1 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .icon-2 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .icon-3 {
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+  .company {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    height: 7vh;
+  }
+  .company > div {
+    height: 90%;
+    width: 80%;
+    margin: auto;
+  }
+  .dl-btn a,
+  .landing-btn a {
+    display: inline-block;
+    margin: 0;
+  }
+  .landing-btn a:first-child,
+  .dl-btn a:first-child {
+    margin: 0;
+    margin-right: 1rem;
+  }
+  .ios {
+    height: 30vh;
+    gap: 0;
+  }
+  .ios > .text-box p {
+    width: 70%;
+    margin: auto;
+  }
+  .dl-btn,
+  .landing-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  footer {
+    flex-direction: row;
+    height: 30vh;
+    justify-content: space-between;
+  }
+  footer > .logo {
+    width: 20%;
+    height: 20%;
+  }
+  .icon-footer {
+    width: 20%;
+  }
+  .text-footer {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
